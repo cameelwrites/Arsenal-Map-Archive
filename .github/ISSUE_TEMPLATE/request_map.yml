@@ -16,7 +16,7 @@ body:
     id: maps
     attributes:
       label: Upload maps
-      description: Please upload maps here:
+      description: Upload Maps
       required: true
 
   - type: checkboxes
