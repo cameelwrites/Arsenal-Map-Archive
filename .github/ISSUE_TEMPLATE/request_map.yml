@@ -17,6 +17,7 @@ body:
     attributes:
       label: "Upload Maps"
       description: "Upload your .rbxm or .rbxl map files here:"
+     validations:
       required: true
 
   - type: checkboxes
