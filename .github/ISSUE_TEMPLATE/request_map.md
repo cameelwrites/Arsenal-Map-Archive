@@ -1,0 +1,48 @@
+name: Add a Map
+description: Get a map added to the repository.
+title: "[Map] "
+labels: ["map"]
+
+body:
+  - type: textarea
+    id: map-name
+    attributes:
+      label: Map Names
+      description: The name of the map being added.
+    validations:
+      required: true
+      
+  - type: upload
+    id: maps
+    attributes:
+      label: Upload maps
+      description: Please upload maps here:
+      required: true
+
+  - type: checkboxes
+    id: map-era
+    attributes:
+      label: What time period is this map from?
+      options:
+        - label: 2019
+        - label: 2020
+        - label: 2021
+        - label: 2022
+        - label: 2023
+        - label: 2024
+        - label: 2025
+        - label: 2026
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: fixed-map
+    attributes:
+      label: What is this map?
+      options:
+        - label: Original File
+        - label: Fixed Save Instance
+        - label: Save Instance
+        - label: Broken Save Instance
+    validations:
+      required: true
