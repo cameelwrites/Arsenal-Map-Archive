@@ -12,7 +12,7 @@ body:
     validations:
       required: true
       
-  - type: upload
+  - type: textarea
     id: maps
     attributes:
       label: "Upload Maps"
